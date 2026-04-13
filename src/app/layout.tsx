@@ -27,9 +27,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${headlineFont.variable} ${bodyFont.variable} dark h-full antialiased`}
+      className={`${headlineFont.variable} ${bodyFont.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-background font-body text-on-surface selection:bg-primary/30">
+      <body className="flex min-h-full flex-col bg-[#d7e7e4] font-body text-[#123d48] selection:bg-[#cf7422]/30">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

@@ -8,13 +8,14 @@ const navItems = [
   { href: "/about", label: "About Us" },
   { href: "/board-games", label: "Board Games" },
   { href: "/books", label: "Books" },
+  { href: "/collaborate", label: "Collaborate" },
 ];
 
 function FireIcon() {
   return (
     <svg
       aria-hidden="true"
-      className="h-6 w-6 text-primary"
+      className="h-6 w-6 text-[#f0b37b]"
       viewBox="0 0 24 24"
       fill="currentColor"
     >
@@ -27,10 +28,10 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <nav className="tonal-shift fixed top-0 z-50 w-full rounded-none border-b border-outline-variant/15 bg-[#131313]/80 backdrop-blur-xl">
+    <nav className="tonal-shift fixed top-0 z-50 w-full rounded-none border-b border-[#5a3d2b]/45 bg-[#1a100c]/96 backdrop-blur-xl">
       <div className="mx-auto flex w-full max-w-[1920px] items-center justify-between px-6 py-5 sm:px-8">
         <Link
-          className="flex items-center gap-2 text-2xl font-bold text-on-surface transition-transform hover:scale-[1.02]"
+          className="flex items-center gap-2 text-2xl font-bold text-[#fff7ec] transition-transform hover:scale-[1.02]"
           href="/"
         >
           <FireIcon />
@@ -45,10 +46,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 className={[
-                  "font-body text-xs uppercase tracking-widest transition-colors duration-300",
+                  "font-body text-sm uppercase tracking-[0.22em] transition-colors duration-300",
                   isActive
-                    ? "border-b-2 border-primary pb-1 text-secondary"
-                    : "text-on-surface hover:text-primary",
+                    ? "border-b-2 border-[#f0b37b] pb-1 text-[#fffaf3]"
+                    : "text-[#f6eadc] hover:text-[#f0b37b]",
                 ].join(" ")}
                 href={item.href}
               >
@@ -59,8 +60,8 @@ export default function Header() {
         </div>
 
         <Link
-          className="bg-primary px-4 py-2 text-xs font-bold uppercase tracking-widest text-on-primary transition duration-100 hover:opacity-90 active:scale-95 sm:px-6"
-          href="/about"
+          className="bg-[#cf7422] px-4 py-2 text-xs font-bold uppercase tracking-[0.22em] text-[#fffaf3] transition duration-100 hover:bg-[#de8a3c] active:scale-95 sm:px-6"
+          href="/collaborate"
         >
           Collaborate
         </Link>
