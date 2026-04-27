@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -11,19 +12,6 @@ const navItems = [
   { href: "/collaborate", label: "Collaborate" },
 ];
 
-function FireIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="h-6 w-6 text-[#f0b37b]"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-    >
-      <path d="M13.5 2.5c.3 2.1-.5 3.8-1.6 5.2-1 1.2-2.2 2.3-2.8 3.8-.6 1.3-.6 3 .1 4.3.8 1.6 2.4 2.7 4.2 2.7 2.8 0 5.1-2.2 5.1-5 0-3.2-2.1-5.1-3.4-7-.7-1-1.3-2.3-1.6-4Zm-3 11.3c1 1 1.4 1.9 1.4 2.9 0 1.4-1 2.3-2.3 2.3-1.4 0-2.5-1.2-2.5-2.7 0-1.8 1.5-3 3.4-4.7Z" />
-    </svg>
-  );
-}
-
 export default function Header() {
   const pathname = usePathname();
 
@@ -34,7 +22,15 @@ export default function Header() {
           className="flex items-center gap-2 text-2xl font-bold text-[#fff7ec] transition-transform hover:scale-[1.02]"
           href="/"
         >
-          <FireIcon />
+          <Image
+            alt="Phoenix Forge Press logo"
+            aria-hidden="true"
+            className="h-9 w-9 object-contain"
+            height={36}
+            priority
+            src="/images/Phoenix%20Forge%20Press%20Shirt%20Design%20-%201.png"
+            width={36}
+          />
           <span className="font-headline">Phoenix Forge Press</span>
         </Link>
 
