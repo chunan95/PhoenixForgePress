@@ -1,16 +1,3 @@
-function FireBadgeIcon() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="h-6 w-6"
-      viewBox="0 0 24 24"
-      fill="currentColor"
-    >
-      <path d="M13.5 2.5c.3 2.1-.5 3.8-1.6 5.2-1 1.2-2.2 2.3-2.8 3.8-.6 1.3-.6 3 .1 4.3.8 1.6 2.4 2.7 4.2 2.7 2.8 0 5.1-2.2 5.1-5 0-3.2-2.1-5.1-3.4-7-.7-1-1.3-2.3-1.6-4Zm-3 11.3c1 1 1.4 1.9 1.4 2.9 0 1.4-1 2.3-2.3 2.3-1.4 0-2.5-1.2-2.5-2.7 0-1.8 1.5-3 3.4-4.7Z" />
-    </svg>
-  );
-}
-
 function GearIcon() {
   return (
     <svg
@@ -62,17 +49,10 @@ export default function HomePage() {
           <div className="relative md:col-span-5">
             <div className="relative aspect-[4/5] w-full overflow-hidden border border-[#87a7ae]/30 bg-[#7ea0a6] shadow-2xl">
               <img
-                alt="Close-up of a high-end designer studio with a mahogany desk, warm brass lamp, and stacks of bound books in soft golden light"
-                className="h-full w-full object-cover opacity-80 grayscale transition-all duration-700 hover:grayscale-0"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxTkHrrVPvAAkjDyKojbPXHmfyYfnDFslhMAshOC1OVcqzyW9_13c8IetM6mTPLWced7vPHyClBD0nvidgRSAu_4fIjQZ-31bNiFOR9cb4GChrqUpkn80GZOcaOpdwXqUU-YBECo30jJaglvzkxNBIse-DrWV2Fie_7crBvvrp4ZjhD7tBO9L1cTixNlOvzNOym1Dw2ab6235QR9BWGzoUm-Qxu4L8WcdbACgCiECSJm1Fpz_H6qJoG3EjS4y-QwYcn8jN41Da2LQ"
+                alt="Phoenix Forge Press horizontal logo"
+                className="h-full w-full object-contain p-8 opacity-90 transition-all duration-700"
+                src="/images/Phoenix%20Forge%20Press%20horizontal%20(1).png"
               />
-            </div>
-
-            <div className="absolute -left-6 top-20 hidden flex-col items-center gap-2 bg-[#cf7422] p-4 text-[#fffaf3] shadow-xl lg:flex">
-              <FireBadgeIcon />
-              <span className="[writing-mode:vertical-rl] py-4 font-label text-xs uppercase tracking-widest">
-                Active Forge
-              </span>
             </div>
           </div>
         </div>
@@ -131,7 +111,7 @@ export default function HomePage() {
                   <div className="mt-6">
                     <a
                       className="gold-thread text-xs font-bold uppercase tracking-widest text-[#0d4f5f]"
-                      href="#"
+                      href="/board-games/oceanic"
                     >
                       Learn More
                     </a>
@@ -148,7 +128,7 @@ export default function HomePage() {
               <div className="relative aspect-[4/5] overflow-hidden border border-[#87a7ae]/20 bg-[#d2dfdc]">
                 <img
                   alt="Angel from the Rust artwork by Jason Link"
-                  className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
+                  className="h-full w-full object-contain p-4 grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
                   src="/images/Angel%20from%20the%20Rust%20-%20Jason%20Link.jpg"
                 />
                 <div className="absolute right-4 top-4">
@@ -171,7 +151,7 @@ export default function HomePage() {
                 <div className="mt-6">
                   <a
                     className="gold-thread text-xs font-bold uppercase tracking-widest text-[#0d4f5f]"
-                    href="#"
+                    href="/books/angel-from-the-rust"
                   >
                     Learn More
                   </a>

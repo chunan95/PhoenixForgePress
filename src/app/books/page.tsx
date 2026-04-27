@@ -11,7 +11,7 @@ const books = [
     description:
       "A distant-future fantasy where advanced technology is mistaken for magic, and one young musician must challenge a false god.",
     buyHref: "https://www.amazon.com/dp/B0BPJTRVR2",
-    learnMoreHref: "#",
+    learnMoreHref: "/books/angel-from-the-rust",
   },
   {
     title: "Desert of the Beast",
@@ -21,17 +21,17 @@ const books = [
     description:
       "Placeholder entry ready for cover art, description, and purchase links as this title comes together.",
     buyHref: "#",
-    learnMoreHref: "#",
+    learnMoreHref: "/books/desert-of-the-beast",
   },
   {
     title: "The Legender",
-    status: "Coming Soon",
-    imageSrc: null,
-    imageAlt: "",
+    status: "Available Now",
+    imageSrc: "/images/The%20Legender.jpg",
+    imageAlt: "The Legender cover artwork",
     description:
       "Placeholder entry ready for cover art, description, and purchase links as this title comes together.",
-    buyHref: "#",
-    learnMoreHref: "#",
+    buyHref: "https://www.amazon.com/Legender-Arkosaegan-Book-1-ebook/dp/B00FFRP45Y/",
+    learnMoreHref: "/books/the-legender",
   },
   {
     title: "Bestiary",
@@ -41,7 +41,7 @@ const books = [
     description:
       "Placeholder entry ready for cover art, description, and purchase links as this title comes together.",
     buyHref: "#",
-    learnMoreHref: "#",
+    learnMoreHref: "/books/bestiary",
   },
 ];
 

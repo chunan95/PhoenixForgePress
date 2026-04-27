@@ -11,7 +11,7 @@ const boardGames = [
     description:
       "A cozy-but-crunchy Euro-style tabletop game about exploring and preserving the underwater world.",
     amazonHref: "#",
-    learnMoreHref: "#",
+    learnMoreHref: "/board-games/oceanic",
   },
 ];
 
