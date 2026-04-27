@@ -80,43 +80,6 @@ export default function HomePage() {
         <div className="absolute right-0 top-0 -z-10 h-full w-1/3 border-l border-[#87a7ae]/20 bg-[#bdd1cd]" />
       </header>
 
-      <section
-        id="about"
-        className="border-y border-[#87a7ae]/20 bg-[#f6f3ea] py-32"
-      >
-        <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-24 px-8 md:grid-cols-2">
-          <div className="order-2 md:order-1">
-            <h2 className="mb-6 font-headline text-4xl text-[#123d48]">
-              The Curated Intent
-            </h2>
-            <p className="mb-6 text-lg leading-relaxed italic text-[#4c6e77]">
-              "We believe the digital age deserves more physical permanence.
-              Every game we design and every book we bind is an invitation to
-              slow down, look closer, and inhabit a new world entirely."
-            </p>
-            <p className="text-lg leading-relaxed text-[#4c6e77]">
-              Led by a team of dedicated designers and storytellers, Phoenix
-              Forge Press operates like an old-world atelier with a futuristic
-              soul. We prioritize quality over volume, choosing to release only
-              what we ourselves would cherish for a lifetime.
-            </p>
-          </div>
-
-          <div className="order-1 grid grid-cols-2 gap-4 md:order-2">
-            <img
-              alt="Stack of high-quality vintage books with textured paper and leather bindings on a clean stone surface"
-              className="h-64 w-full object-cover opacity-70 grayscale transition-opacity hover:opacity-100"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEf925yzQ51qfdfvgsD2U9Azp6LFbWsqsi-X5Kt12wCK_WlexwbnxSqBBINNw9PumROmokCzSuL4wuewbk966a2-piE6DcL9vsOuEYH3uZDgaN3ABV0fgSvUHQWvJvfCgvg5Pi7H1UpCLSFxm-38-340AGQGo9_kdo8ZrjsDT5IdbjbzOCc3qmIgmqw1036PLyNTSjQCYelYXoLIRdSOYoPpoA6k1sv9YNgNe80cDgso3MpmBm-NvmNheC6FttSRyAFE6YFvfHUcY"
-            />
-            <img
-              alt="Hands holding a beautifully designed board game card with gold leaf accents and intricate illustrations"
-              className="h-64 w-full translate-y-8 object-cover opacity-70 grayscale transition-opacity hover:opacity-100"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMO7jpKFV5qH7hGQRIn_PpFqoqzbkJ_ICvJ-JVMFKVhYNEZ7lMti1Q1hzTAiQ6uGEXIKidL3L7pof-EBib_0UPLvwpHGNlON0GD91JPSGjPCgOzucEeNFWfjKrjARl8oyt-QDuk596W6uJdHbMrDS1pJCGB0MVHmlslWXONDrsBNC5h37ulQC24jsLqdmrYP-1E9r6G2jOIErAb2w9Jrq1_WtWlwXSyNS2H6Q2dtE9Dv81cu7TDFHlvQwFKI92jyLA_SqV-q78-n0"
-            />
-          </div>
-        </div>
-      </section>
-
       <section className="bg-[#fcfaf5] py-32">
         <div className="mx-auto max-w-7xl px-8">
           <div className="mb-16 flex items-end justify-between gap-6">
@@ -141,9 +104,9 @@ export default function HomePage() {
             <div className="group md:col-span-7">
               <div className="relative aspect-[16/10] overflow-hidden border border-[#87a7ae]/20 bg-[#d2dfdc]">
                 <img
-                  alt="Overhead view of an elegant, minimalist board game with dark blue board, gold pieces, and premium cards on a white linen table"
+                  alt="Phoenix Forge Press board game photographed in front of an ocean backdrop"
                   className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2KmNHom6ZyGdRcOmlkdVB6nDHYnGgJJDcbGsQ6zSEflDnjPdya_5l3l635R7IJctgJMAM48ve53J5a270lftcyP-ywrsJ0tZGTnDVlR3MyeKQKlb6r0KY2caWOPlfUVX21aw3X0aTDP-nHxyAaJwlbopQKCx1mPEOtAOOwLLyrKXZ9micqgnhoA8PG5xSt8p-dGTozE6jELV2JXdQK7lMf_B5qYBGlNAOCLXoj5XcF1WcJbFhQxze3lGor0Uiy0hA5DcD7x_HDWI"
+                  src="/images/Game%20in%20front%20of%20Ocean%202%20(3).jpg"
                 />
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[#0d4f5f]/85 to-transparent p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <button className="flex items-center gap-2 bg-[#cf7422] px-6 py-3 text-xs font-bold uppercase tracking-widest text-[#fffaf3]">
@@ -155,33 +118,40 @@ export default function HomePage() {
               <div className="mt-6 flex flex-col justify-between gap-6 md:flex-row md:items-start">
                 <div>
                   <span className="mb-3 inline-block border border-[#cf7422]/20 bg-[#cf7422]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#cf7422]">
-                    Limited Edition
+                    Launching Soon
                   </span>
                   <h3 className="mb-2 font-headline text-3xl text-[#123d48]">
-                    Midnight at the Conservatory
+                    Oceanic
                   </h3>
                   <p className="max-w-md text-[#4c6e77]">
-                    An intricate 2-player strategy game housed in a velvet-lined
-                    maple box. Discover the secrets of the forgotten gardens.
+                    Oceanic is a cozy-but-crunchy Euro-style tabletop game about exploring and preserving the 
+                    underwater world. You will collect and play marine life cards, build habitats across biomes 
+                    like the Coral Reef and the Abyss, and adapt to an ocean where every choice ripples through a shared ecosystem.
                   </p>
+                  <div className="mt-6">
+                    <a
+                      className="gold-thread text-xs font-bold uppercase tracking-widest text-[#0d4f5f]"
+                      href="#"
+                    >
+                      Learn More
+                    </a>
+                  </div>
                 </div>
                 <span className="font-headline text-2xl text-[#cf7422]">
                   $145
                 </span>
+          
               </div>
             </div>
 
             <div className="group md:col-span-5 md:mt-24">
               <div className="relative aspect-[4/5] overflow-hidden border border-[#87a7ae]/20 bg-[#d2dfdc]">
                 <img
-                  alt="A thick, linen-bound hardcover book titled 'Aetheric Dreams' standing upright against a soft cream background with elegant serif typography"
+                  alt="Angel from the Rust artwork by Jason Link"
                   className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGODjaWaY87sZpWyknt4lYWfpaixM_01RNLT1dbmEfSC9dXiiqCjFblwprjWW_bq5uAmi2weibMozPgut3PUvq1dZMoaTdTn_O7DkEWKtwm6DSD3-2d4zBd5ashrbPjZgmBBMq8red4nxJp7RuhenFt9PqjIQff6jFH9rmEDhu5QXZyNV16w5MCGDTHb_9WSoF4maRHf53sSD6l5iGWSnhocyjkuqhEqb0rz1RvjXoTzp11gil4NBFYRCcPEgmREoSUmI3UptERt4"
+                  src="/images/Angel%20from%20the%20Rust%20-%20Jason%20Link.jpg"
                 />
                 <div className="absolute right-4 top-4">
-                  <div className="border border-[#87a7ae]/30 bg-[#325962] px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#fffaf3]">
-                    Sold Out
-                  </div>
                 </div>
               </div>
 
@@ -190,19 +160,20 @@ export default function HomePage() {
                   Hardcover Series
                 </span>
                 <h3 className="mb-2 font-headline text-3xl text-[#123d48]">
-                  The Alchemist&apos;s Vellum
+                  Angel from the Rust
                 </h3>
                 <p className="text-[#4c6e77]">
-                  A collection of 42 short stories, printed on heavy archival
-                  paper with hand-drawn marginalia. The definitive collector&apos;s
-                  edition.
+                  In a distant future Earth, society has turned medieval, and modern technology is seen as 
+                  illegal "magic." In this apocalyptic society, a young musician fleeing the law 
+                  realizes her impossible fate: To dethrone a killer who has manipulated a whole city 
+                  into believing he is a god. 
                 </p>
                 <div className="mt-6">
                   <a
                     className="gold-thread text-xs font-bold uppercase tracking-widest text-[#0d4f5f]"
                     href="#"
                   >
-                    Join Waiting List
+                    Learn More
                   </a>
                 </div>
               </div>
