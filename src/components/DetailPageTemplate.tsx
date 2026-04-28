@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { ReactNode } from "react";
+import ImageCarousel from "@/components/ImageCarousel";
 import ReviewCarousel from "@/components/ReviewCarousel";
 
 type DetailItem = {
@@ -10,6 +12,11 @@ type DetailItem = {
 type Review = {
   quote: string;
   source: string;
+};
+
+type CoverImage = {
+  src: string;
+  alt: string;
 };
 
 type DetailPageTemplateProps = {
@@ -29,6 +36,8 @@ type DetailPageTemplateProps = {
   storyKicker: string;
   storyParagraphs: string[];
   reviews?: Review[];
+  children?: ReactNode;
+  coverGallery?: CoverImage[];
 };
 
 export default function DetailPageTemplate({
@@ -48,6 +57,8 @@ export default function DetailPageTemplate({
   storyKicker,
   storyParagraphs,
   reviews,
+  children,
+  coverGallery,
 }: DetailPageTemplateProps) {
   return (
     <section className="bg-[linear-gradient(180deg,#d7e7e4_0%,#e7efec_24%,#f6f3ea_58%,#fcfaf5_100%)] pb-24 pt-32">
@@ -55,7 +66,9 @@ export default function DetailPageTemplate({
         <div className="grid gap-12 lg:grid-cols-[360px_minmax(0,1fr)]">
           <aside className="lg:sticky lg:top-32 lg:self-start">
             <div className="border border-[#87a7ae]/30 bg-[linear-gradient(180deg,#d2dfdc_0%,#eef4f1_100%)] p-6 shadow-[0_24px_60px_rgba(18,61,72,0.12)]">
-              {coverSrc ? (
+              {coverGallery && coverGallery.length > 0 ? (
+                <ImageCarousel images={coverGallery} title={title} />
+              ) : coverSrc ? (
                 <div className="relative overflow-hidden border border-[#87a7ae]/25 bg-[#f8fbfa] shadow-[0_20px_40px_rgba(18,61,72,0.08)]">
                   <Image
                     alt={coverAlt}
@@ -129,10 +142,17 @@ export default function DetailPageTemplate({
               </p>
 
               <div className="mt-8 grid gap-px overflow-hidden border border-[#87a7ae]/20 bg-[#87a7ae]/20 sm:grid-cols-2 xl:grid-cols-4">
-                {details.map((detail) => (
+                {details.map((detail, index) => {
+                  const isLastOddItem =
+                    details.length % 2 === 1 && index === details.length - 1;
+
+                  return (
                   <div
                     key={detail.label}
-                    className="bg-[#f8f7f2]/88 px-5 py-5 backdrop-blur-sm"
+                    className={[
+                      "bg-[#f8f7f2]/88 px-5 py-5 backdrop-blur-sm",
+                      isLastOddItem ? "sm:col-span-2 xl:col-span-4" : "",
+                    ].join(" ")}
                   >
                     <p className="text-[11px] font-bold uppercase tracking-[0.28em] text-[#0d4f5f]">
                       {detail.label}
@@ -141,7 +161,8 @@ export default function DetailPageTemplate({
                       {detail.value}
                     </p>
                   </div>
-                ))}
+                  );
+                })}
               </div>
             </section>
 
@@ -155,9 +176,11 @@ export default function DetailPageTemplate({
                     {storyHeading}
                   </h2>
                 </div>
-                <p className="max-w-sm text-sm leading-7 text-[#4c6e77]">
-                  {storyKicker}
-                </p>
+                {storyKicker ? (
+                  <p className="max-w-sm text-sm leading-7 text-[#4c6e77]">
+                    {storyKicker}
+                  </p>
+                ) : null}
               </div>
 
               <div className="mt-8 max-w-3xl space-y-6 text-base leading-8 text-[#355964]">
@@ -166,6 +189,8 @@ export default function DetailPageTemplate({
                 ))}
               </div>
             </article>
+
+            {children ? <div className="space-y-10">{children}</div> : null}
           </div>
         </div>
 

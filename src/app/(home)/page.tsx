@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function GearIcon() {
   return (
     <svg
@@ -81,19 +83,24 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 gap-12 md:grid-cols-12">
-            <div className="group md:col-span-7">
-              <div className="relative aspect-[16/10] overflow-hidden border border-[#87a7ae]/20 bg-[#d2dfdc]">
-                <img
-                  alt="Phoenix Forge Press board game photographed in front of an ocean backdrop"
-                  className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
-                  src="/images/Game%20in%20front%20of%20Ocean%202%20(3).jpg"
-                />
-                <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[#0d4f5f]/85 to-transparent p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <button className="flex items-center gap-2 bg-[#cf7422] px-6 py-3 text-xs font-bold uppercase tracking-widest text-[#fffaf3]">
-                    Inspect Detail
-                  </button>
+            <div className="md:col-span-7">
+              <Link
+                className="group block"
+                href="/board-games/oceanic"
+              >
+                <div className="relative aspect-[16/10] overflow-hidden border border-[#87a7ae]/20 bg-[#d2dfdc]">
+                  <img
+                    alt="Phoenix Forge Press board game photographed in front of an ocean backdrop"
+                    className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0 group-focus-visible:scale-105 group-focus-visible:grayscale-0 group-active:scale-105 group-active:grayscale-0"
+                    src="/images/Game%20in%20front%20of%20Ocean%202%20(3).jpg"
+                  />
+                  <div className="absolute inset-0 flex items-end bg-gradient-to-t from-[#0d4f5f]/85 to-transparent p-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100 group-active:opacity-100">
+                    <span className="flex items-center gap-2 bg-[#cf7422] px-6 py-3 text-xs font-bold uppercase tracking-widest text-[#fffaf3]">
+                      Inspect Detail
+                    </span>
+                  </div>
                 </div>
-              </div>
+              </Link>
 
               <div className="mt-6 flex flex-col justify-between gap-6 md:flex-row md:items-start">
                 <div>
@@ -124,16 +131,19 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="group md:col-span-5 md:mt-24">
-              <div className="relative aspect-[4/5] overflow-hidden border border-[#87a7ae]/20 bg-[#d2dfdc]">
-                <img
-                  alt="Angel from the Rust artwork by Jason Link"
-                  className="h-full w-full object-contain p-4 grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0"
-                  src="/images/Angel%20from%20the%20Rust%20-%20Jason%20Link.jpg"
-                />
-                <div className="absolute right-4 top-4">
+            <div className="md:col-span-5 md:mt-24">
+              <Link
+                className="group block"
+                href="/books/angel-from-the-rust"
+              >
+                <div className="relative aspect-[4/5] overflow-hidden border border-[#87a7ae]/20 bg-[#d2dfdc]">
+                  <img
+                    alt="Angel from the Rust artwork by Jason Link"
+                    className="h-full w-full object-contain p-4 grayscale transition-all duration-700 group-hover:scale-105 group-hover:grayscale-0 group-focus-visible:scale-105 group-focus-visible:grayscale-0 group-active:scale-105 group-active:grayscale-0"
+                    src="/images/Angel%20from%20the%20Rust%20-%20Jason%20Link.jpg"
+                  />
                 </div>
-              </div>
+              </Link>
 
               <div className="mt-6">
                 <span className="mb-3 inline-block border border-[#cf7422]/20 bg-[#cf7422]/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-[#cf7422]">

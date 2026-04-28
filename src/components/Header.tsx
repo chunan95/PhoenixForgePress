@@ -38,7 +38,7 @@ export default function Header() {
             src="/images/Phoenix%20Forge%20Press%20Shirt%20Design%20-%201.png"
             width={36}
           />
-          <span className="font-headline text-xl leading-none sm:text-2xl">
+          <span className="font-headline text-lg leading-none text-[#f7ead8] sm:text-2xl md:text-xl md:text-[#fff7ec]">
             Phoenix Forge Press
           </span>
         </Link>
@@ -75,7 +75,7 @@ export default function Header() {
           aria-controls="mobile-site-menu"
           aria-expanded={isMobileMenuOpen}
           aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-          className="flex h-11 w-11 shrink-0 items-center justify-center border border-[#f0b37b]/55 bg-[#211611] text-[#fffaf3] transition hover:bg-[#2b1c15] md:hidden"
+          className="flex h-11 w-11 shrink-0 items-center justify-center border border-[#f4c99d]/70 bg-[#211611] text-[#fffaf3] transition hover:bg-[#2b1c15] md:hidden"
           onClick={() => setIsMobileMenuOpen((open) => !open)}
           type="button"
         >
@@ -107,7 +107,7 @@ export default function Header() {
 
       {isMobileMenuOpen ? (
         <div
-          className="border-t border-[#5a3d2b]/45 bg-[#1a100c]/98 px-5 pb-5 md:hidden"
+          className="border-t border-[#7f5d46]/65 bg-[#1a100c]/98 px-5 pb-5 md:hidden"
           id="mobile-site-menu"
         >
           <div className="flex flex-col gap-2 pt-4">
@@ -120,8 +120,8 @@ export default function Header() {
                   className={[
                     "border px-4 py-3 font-body text-sm uppercase tracking-[0.22em] transition-colors duration-300",
                     isActive
-                      ? "border-[#f0b37b] bg-[#2d1c15] text-[#fffaf3]"
-                      : "border-[#5a3d2b]/45 text-[#f6eadc] hover:border-[#f0b37b]/70 hover:text-[#f0b37b]",
+                      ? "border-[#f4c99d] bg-[#3a2418] text-[#fffaf3]"
+                      : "border-[#7f5d46]/65 bg-[#24160f] text-[#f7ead8] hover:border-[#f4c99d] hover:bg-[#322017] hover:text-[#fffaf3]",
                   ].join(" ")}
                   href={item.href}
                   onClick={closeMobileMenu}
